@@ -1,6 +1,6 @@
-# website-berners-lee project :
+### website-berners-lee project :
 
-for this projet, i try to explore html and css deeper and i work with :
+for this projet, I try to explore html and css deeper and i work with :
 - different **semantic** _(section, span, div, etc...)_.
 - hover.
 - implement **icons** from "font-awesome".
