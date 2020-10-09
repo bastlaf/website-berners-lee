@@ -36,9 +36,7 @@ font-family: 'Open Sans', sans-serif;
 }
 .berners {
     border-radius: 50%;
-    border : solid 4px rgb(168, 167, 167)
-}
-.berners {
+    border : solid 4px rgb(168, 167, 167);
     margin-top: 30px;
     width: 110px;
     height: 110px;
@@ -51,12 +49,11 @@ h1 {
 h2 {
     font-weight: 600;
 }
-p {
+.bio > p {
     text-align: center;
     margin-bottom: 20px;
-}
-strong {
-    font-weight: 900;
+    text-align: justify;
+    line-height: 25px;
 }
 a {
     background-color: rgb(228, 59, 93);
@@ -91,67 +88,36 @@ li {
     color: rgb(105, 103, 103);
     text-align: center;
 }
-.premierfilm {
+.film {
     display: flex;
     flex-direction: row;
     padding-left: 10px;
     padding-right: 15px;
+    margin-bottom: 25px;
     text-align: center;
     color: rgb(105, 103, 103);
 }
-.deuxiemefilm {
-    display: flex;
-    flex-direction: row;
-    padding-left: 10px;
-    padding-right: 15px;
-    text-align: center;
-    color: rgb(105, 103, 103);
-}
-.troisiemefilm {
-    display: flex;
-    flex-direction: row;
-    padding-left: 10px;
-    padding-right: 15px;
-    text-align: center;
-    color: rgb(105, 103, 103);
-}
-.space_odyssey {
+.imgfilm {
     width: 120px;
-}
-.mrhulot {
-    width: 120px;
-}
-.alien {
-    width: 120px;
-    margin-bottom: 30px;
 }
 .para {
     text-align: justify;
     line-height: 25px;
     padding-left: 40px;
 }
-.para2 {
-    text-align: justify;
-    line-height: 25px;
-}
 @media screen and (max-width: 640px) {
     .ensemble {
         margin-left: 0px;
         margin-right: 0px;
     }
-    .premierfilm {
-        display: flex;
-        flex-direction: column;
-    }
-    .deuxiemefilm {
-        display: flex;
-        flex-direction: column;
-    }
-    .troisiemefilm {
+    .film {
         display: flex;
         flex-direction: column;
     }
     .para {
         padding-left: 0px;
     }
-  }
+    .logo > ul {
+        flex-direction: column;
+    }
+}
