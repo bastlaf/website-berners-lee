@@ -9,17 +9,23 @@ font-family: 'Open Sans', sans-serif;
     margin-bottom: 10px;
 }
 .bio {
-    color: darkgray;
+    color: rgb(105, 103, 103);
     text-align: center;
     background-color: white;
     border-radius: 5px;
     padding-right: 15px;
     padding-left: 15px;
     padding-bottom: 20px;
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(148,148,148,1);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(148,148,148,1);
+    box-shadow: 0px 0px 2px 0px rgba(148,148,148,1);
 }
 .link {
     background-color: white;
     border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(148,148,148,1);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(148,148,148,1);
+    box-shadow: 0px 0px 2px 0px rgba(148,148,148,1);
 }
 .contenu {
     background-color: white;
@@ -27,7 +33,7 @@ font-family: 'Open Sans', sans-serif;
 }
 .berners {
     border-radius: 50%;
-    border : solid 4px grey
+    border : solid 4px rgb(168, 167, 167)
 }
 .berners {
     margin-top: 30px;
@@ -39,8 +45,14 @@ h1 {
     color: rgb(228, 59, 93);
     font-weight: 900;
 }
+h2 {
+    font-weight: 600;
+}
 p {
-    text-align: justify;
+    text-align: center;
+}
+strong {
+    font-weight: 900;
 }
 a {
     background-color: rgb(228, 59, 93);
@@ -51,5 +63,66 @@ a {
     transition: 0.3s;
 }
 a:hover {
-    background-color: rgb(153, 39, 62);
+    background-color: rgb(219, 18, 58);
+}
+;logo {
+
+}
+.logo > ul {
+    font-size: 20px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: darkgrey;
+    padding-right: 40px;
+
+}
+li {
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+.titrecontenu {
+    padding-top: 30px;
+    color: rgb(105, 103, 103);
+    text-align: center;
+}
+.premierfilm {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-right: 15px;
+    text-align: center;
+    color: rgb(105, 103, 103);
+}
+.deuxiemefilm {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-right: 15px;
+    text-align: center;
+    color: rgb(105, 103, 103);
+}
+.troisiemefilm {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-right: 15px;
+    text-align: center;
+    color: rgb(105, 103, 103);
+}
+.space_odyssey {
+    width: 120px;
+}
+.mrhulot {
+    width: 120px;
+}
+.alien {
+    width: 120px;
+}
+.para {
+    text-align: justify;
 }
