@@ -134,3 +134,24 @@ li {
     text-align: justify;
     line-height: 25px;
 }
+@media screen and (max-width: 640px) {
+    .ensemble {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .premierfilm {
+        display: flex;
+        flex-direction: column;
+    }
+    .deuxiemefilm {
+        display: flex;
+        flex-direction: column;
+    }
+    .troisiemefilm {
+        display: flex;
+        flex-direction: column;
+    }
+    .para {
+        padding-left: 0px;
+    }
+  }
