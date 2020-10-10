@@ -1,4 +1,3 @@
-
 body /* fond de la page */ {
 background-color: rgb(236, 236, 236);
 font-family: 'Open Sans', sans-serif;
@@ -134,4 +133,5 @@ span /* élément surligné du titre */{
     .para /* enlever le padding left des paragraphes */{
         padding-left: 10px;
         padding-right: 10px;
+    }
 }
