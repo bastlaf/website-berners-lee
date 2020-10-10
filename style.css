@@ -1,14 +1,16 @@
-body {
+
+body /* fond de la page */ {
 background-color: rgb(236, 236, 236);
 font-family: 'Open Sans', sans-serif;
 }
-.ensemble{
+
+.ensemble /* création des marges de la page */ { 
     margin-right: 25%;
     margin-left: 25%;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.bio {
+.bio /* 1ère box */{
     color: rgb(105, 103, 103);
     text-align: center;
     background-color: white;
@@ -16,46 +18,43 @@ font-family: 'Open Sans', sans-serif;
     padding-right: 15px;
     padding-left: 15px;
     padding-bottom: 20px;
-    -webkit-box-shadow: 0px 0px 2px 0px rgba(148,148,148,1);
-    -moz-box-shadow: 0px 0px 2px 0px rgba(148,148,148,1);
     box-shadow: 0px 0px 2px 0px rgba(148,148,148,1);
 }
-.link {
+.link /* 2ème box */{
     background-color: white;
     border-radius: 5px;
-    -webkit-box-shadow: 0px 0px 2px 0px rgba(148,148,148,1);
-    -moz-box-shadow: 0px 0px 2px 0px rgba(148,148,148,1);
+    box-sizing: content-box;
     box-shadow: 0px 0px 2px 0px rgba(148,148,148,1);
 }
-.contenu {
+.contenu /* 3ème box */{
     background-color: white;
     border-radius: 5px;
-    -webkit-box-shadow: 0px 0px 2px 0px rgba(148,148,148,1);
-    -moz-box-shadow: 0px 0px 2px 0px rgba(148,148,148,1);
     box-shadow: 0px 0px 2px 0px rgba(148,148,148,1);
 }
-.berners {
+.berners /* photo de Tim */{
     border-radius: 50%;
     border : solid 4px rgb(168, 167, 167);
     margin-top: 30px;
     width: 110px;
     height: 110px;
 }
-h1 {
+h1 /* titre */{
     font-size: 30px;
     color: rgb(228, 59, 93);
     font-weight: 900;
 }
-h2 {
+h2 /* sous-titre */{
     font-weight: 600;
 }
-.bio > p {
+.bio > p /* paragraphe sur "qui est Tim") */{
+/* ciblé "enfant p de bio" car j'ai d'autre p dans la page et je ne voulait prendre que celui-ci. */
+/* J'aurais pu créer une class, mais c'était pour tester. */
     text-align: center;
     margin-bottom: 20px;
     text-align: justify;
     line-height: 25px;
 }
-.bouton {
+.bouton /* bouton */{
     background-color: rgb(228, 59, 93);
     border-radius: 3px;
     padding: 0.5em;
@@ -63,10 +62,10 @@ h2 {
     color:white;
     transition: 0.3s;
 }
-.bouton:hover {
+.bouton:hover /* animation du bouton */{
     background-color: rgb(219, 18, 58);
 }
-.logo > ul {
+.logo > ul /*box des logos */{
     font-size: 20px;
     list-style-type: none;
     display: flex;
@@ -75,30 +74,32 @@ h2 {
     padding-top: 50px;
     padding-bottom: 50px;
     color: darkgrey;
-    padding-right: 40px;
+    padding-right: 25px;
+    padding-left: 15px;
 }
-li {
+li /* box de chaque logo séparément */{
     text-align: center;
-    padding-left: 30px;
-    padding-right: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
-.navv {
+
+.navv /* uniquement le logo et le texte (pas de box) */{
     color: darkgray;
     text-decoration: none;
     transition: 500ms;
 }
-.navv:hover {
+.navv:hover /* animation des logos */{
     color: rgb(36, 36, 37);
 }
-.titrecontenu {
+.titrecontenu /* titre de la box contenu */{
     padding-top: 30px;
     color: rgb(105, 103, 103);
     text-align: center;
 }
-span {
+span /* élément surligné du titre */{
     background-color: rgb(228, 218, 218);
 }
-.film {
+.film /* section contenant les affiches des films ainsi que leurs résumés */{
     display: flex;
     flex-direction: row;
     padding-left: 10px;
@@ -107,27 +108,28 @@ span {
     text-align: center;
     color: rgb(105, 103, 103);
 }
-.imgfilm {
+.imgfilm /* affiches des films */{
     width: 120px;
 }
-.para {
+.para /* résumés des films */{
     text-align: justify;
     line-height: 25px;
     padding-left: 40px;
 }
 @media screen and (max-width: 640px) {
-    .ensemble {
+    .ensemble /* enlever les marge sur téléphone */{
         margin-left: 0px;
         margin-right: 0px;
     }
-    .film {
+    .film /* mettre les résumés en dessous de son affiche sur téléphone */{
         display: flex;
         flex-direction: column;
     }
-    .para {
+    li /* Mettre une marge autour des logos sur téléphone */{
+        margin-left: 20px;
+        margin-right: 20px;
         padding-left: 0px;
-    }
-    .logo > ul {
-        flex-direction: column;
+        padding-right: 0px;
+
     }
 }
